@@ -71,7 +71,6 @@ const User = ({ user, getUser, getUserRepos, repos, match }) => {
 };
 
 User.propTypes = {
-
     user: PropTypes.object.isRequired,
     repos: PropTypes.array.isRequired,
     getUser: PropTypes.func.isRequired,

@@ -18,11 +18,13 @@ const Search = ({ searchUsers, setAlert }) => {
 
     return (
         <div className="container searchContainer">
-            <div className="search card card-body" onSubmit={onSubmit} >
-                <h1>Search GitHub Users</h1>
-                <p className="lead">Enter a username to fetch a user profile and repos</p>
-                <input type="text" className="form-control" placeholder="GitHub Username..." value={text}
-                    onChange={onChange} />
+            <div className="search card card-body" >
+                <form onSubmit={onSubmit} className='form'>
+                    <h1>Search GitHub Users</h1>
+                    <p className="lead">Enter a username to fetch a user profile and repos</p>
+                    <input type="text" className="form-control" placeholder="GitHub Username..." value={text}
+                        onChange={onChange} />
+                </form>
             </div>
         </div>
 
